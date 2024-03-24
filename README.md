@@ -14,10 +14,10 @@ Develop a web-based application that enables users to upload transportation-rela
 Traffic Vision is a full-stack web application that takes an image input, sends it to the backend via HTTP request. The Flask backend processes the image, identifies objects (specifically cars, trucks, and buses), counts them if already present, then sends the final image to the frontend for display.
 
 # 3.0 System Requirements
-* This app is not Dockerize due to my system incompatibility, ultralytics, collections, numpy.
+* This app is not Dockerize due to my system incompatibility.
 
 - Python(3.11+)
-- Modules Used for Python: flask,cv2 ,flask_cors
+- Modules Used for Python: flask,cv2 ,flask_cors, ultralytics, collections.
 - Nodejs (21.1.0+)
 
 
