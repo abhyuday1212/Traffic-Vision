@@ -62,8 +62,8 @@ function GetStarted() {
 
   const [showError, setShowError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
-
+ 
+ 
 
   useEffect(() => {
     const getImage = async () => {
@@ -81,20 +81,16 @@ function GetStarted() {
             const reader = response.body.getReader();
             const chunks = [];
 
-            // Read the stream and accumulate chunks of data
             while (true) {
               const { done, value } = await reader.read();
               if (done) break;
               chunks.push(value);
             }
 
-            // Combine all chunks into a single Uint8Array
             const imageData = new Uint8Array(await new Blob(chunks).arrayBuffer());
 
-            // Convert the binary data to a data URL
             const imageUrl = URL.createObjectURL(new Blob([imageData]));
 
-            // Set the data URL as the response
             setResponseFile(imageUrl);
           } else {
             console.error('Error:', response.statusText);
@@ -106,11 +102,11 @@ function GetStarted() {
     };
 
     getImage();
-    let url = responseFile.picture ? responseFile.picture : bannerImage;
-
+ 
   }, [file]);
 
-  let url = responseFile.picture ? responseFile.picture : bannerImage;
+  const url1 = file ? URL.createObjectURL(file) : bannerImage;
+  let url2 = responseFile ? responseFile : bannerImage;
 
   // -=-==-=-=-=-=-=-=-=-=-=-=-=-=-=--=-===-= 
   return (
@@ -146,7 +142,8 @@ function GetStarted() {
 
 
           {/* *-*--*-*-*-*-*-*-*-*--*img*-*-*-*-*-**-**-*-*-*/}
-          <Image src={url} alt="Banner img..." />
+          <Image src={url1} alt="User img..." />
+          <Image src={url2} alt="Response img..." />
 
 
           {/* *-*--*-*-*-*-*-*-*-*-**-*-*-*-*-**-*-*-*-*-**-**-*-*-*/}

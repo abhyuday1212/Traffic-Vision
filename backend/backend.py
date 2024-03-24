@@ -85,7 +85,7 @@ def process_image(image_stream):
 
         return image
 
-    img = cv2.resize(image, (1020, 500))
+    img = cv2.resize(image, (600, 600))
     object_classes = object(img)
     count_objects_in_image(object_classes, img)
     return img
