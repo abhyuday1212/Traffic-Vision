@@ -2,6 +2,9 @@
 
 This Project is made as a part of internship project evaluation for Web Development role for IISC Banglore, India.
 
+# Prototype
+[You Tube | Video ( _Click Here_ )](https://youtu.be/FzVe_E0XTC4)
+
 ## 1.0 Problem Statement
 
 Develop a web-based application that enables users to upload transportation-related images (such as traffic camera images) and perform object detection on those images.
