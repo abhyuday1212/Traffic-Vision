@@ -49,11 +49,27 @@ const StyledFileInput = styled(Box)`
 
 
 const Image = styled('img')({
-  width: '100%',
+  width: '25rem',
   height: '50vh',
   aspectRatio: "3/2",
   objectFit: 'contain',
   borderRadius: '14px',
+  flexShrink: 0,
+  border: "1px solid black",
+  margin: "2px 2px",
+
+});
+
+const Image2 = styled('img')({
+  width: '26rem',
+  height: '50vh',
+  aspectRatio: "3/2",
+  objectFit: 'contain',
+  borderRadius: '14px',
+  flexShrink: 0,
+  border: "1px solid black",
+  margin:"2px 2px"
+
 });
 
 function GetStarted() {
@@ -143,11 +159,16 @@ function GetStarted() {
 
 
           {/* *-*--*-*-*-*-*-*-*-*--*img*-*-*-*-*-**-**-*-*-*/}
+
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", flexWrap:"wrap" }}>
+
+
           <Image src={url1} alt="User img..." />
 
 
-          <Image src={url2} alt="Response img..." />
+          <Image2 src={url2} alt="Response img..." />
 
+          </div>
 
           {/* *-*--*-*-*-*-*-*-*-*-**-*-*-*-*-**-*-*-*-*-**-**-*-*-*/}
 
