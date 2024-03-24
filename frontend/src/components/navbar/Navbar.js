@@ -17,19 +17,17 @@ const Navbar = () => {
       </h1>
       <ul className="hidden md:flex list-none">
         <Link to="/">
-          <li className="p-4 text-[white]  hover:text-[crimson] hover:font-semibold">
+          <li className="p-4 text-[white] text-xl hover:text-[crimson] hover:font-semibold">
             Home
           </li>
         </Link>
         <Link to="/getstarted">
-          <li className="p-4 text-[white] hover:text-[crimson]">Detect</li>
+          <li className="p-4 text-[white] text-xl hover:text-[crimson]">Detect</li>
         </Link>
         <Link to="/about">
-          <li className="p-4  text-[white] hover:text-[crimson]">About</li>
+          <li className="p-4  text-[white] text-xl hover:text-[crimson]">About</li>
         </Link>
-        <Link to="/contact">
-          <li className="p-4 text-[white]  hover:text-[crimson]">Contact</li>
-        </Link>
+ 
 
  
  
@@ -40,7 +38,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 top-0 ss:w-[40%] sm:w-[40%] xs:w-[75%]  w-[50%]  h-full z-20 border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
@@ -50,18 +48,15 @@ const Navbar = () => {
           </Link>
         </h1>
         <Link to="/">
-          <li className="p-4 text-[white]  hover:text-[crimson] hover:font-semibold">
+          <li className="p-4 text-[white] text-xl hover:text-[crimson] hover:font-semibold">
             Home
           </li>
         </Link>
         <Link to="/getstarted">
-          <li className="p-4 text-[white]  hover:text-[crimson]">Detect</li>
+          <li className="p-4 text-[white] text-xl hover:text-[crimson]">Detect</li>
         </Link>
         <Link to="/about">
-          <li className="p-4 text-[white]  hover:text-[crimson]">About</li>
-        </Link>
-        <Link to="/contact">
-          <li className="p-4 text-[white]  hover:text-[crimson]">Contact</li>
+          <li className="p-4 text-[white] text-xl hover:text-[crimson]">About</li>
         </Link>
  
       </ul>
