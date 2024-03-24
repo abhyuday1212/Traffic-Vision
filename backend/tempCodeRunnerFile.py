@@ -1,0 +1,1 @@
+return send_file(temp_file.name, mimetype='image/jpeg')
