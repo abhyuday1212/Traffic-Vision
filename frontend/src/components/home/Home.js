@@ -29,8 +29,8 @@ const Home = () => {
 
 
   return (
-    <div className="text-white h-full my-35 bg-[#000300]">
-      <div className=" mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center bg-[#000300] color-[#ffff] ">
+    <div className="text-white h-full my-35  ">
+      <div className=" mt-[-64px] w-full h-screen mx-auto text-center flex flex-col justify-center bg-[#000300] color-[#ffff]">
         <p className="text-[#00df9a] font-bold p-2 text-xl">
           Spot, Count, Go: Your vehicle detection companion.
         </p>
