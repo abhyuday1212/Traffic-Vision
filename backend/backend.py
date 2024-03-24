@@ -1,5 +1,5 @@
 # Import make_response
-from flask import Flask, request, jsonify, make_response, send_file
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import cv2
 from ultralytics import YOLO
