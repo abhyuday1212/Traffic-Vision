@@ -8,6 +8,7 @@ import {
 // icons
 import { AddCircle as Add } from "@mui/icons-material";
 import bannerImage from "../assets/ai.jpg"
+import bannerImage2 from "../assets/Loading.jpg"
 
 
 const Container = styled(Box)`
@@ -35,8 +36,8 @@ const InsideContainer = styled(Box)`
 `;
 
 const StyledFileInput = styled(Box)`
-  width: 33.5vw;
-  margin: 0px 0px;
+  width: 100%;
+  margin: 5px 0px;
   padding: 0px 0px;
   display:flex;
   justify-content: space-around;
@@ -106,7 +107,7 @@ function GetStarted() {
   }, [file]);
 
   const url1 = file ? URL.createObjectURL(file) : bannerImage;
-  let url2 = responseFile ? responseFile : bannerImage;
+  let url2 = responseFile ? responseFile : bannerImage2;
 
   // -=-==-=-=-=-=-=-=-=-=-=-=-=-=-=--=-===-= 
   return (
@@ -143,6 +144,8 @@ function GetStarted() {
 
           {/* *-*--*-*-*-*-*-*-*-*--*img*-*-*-*-*-**-**-*-*-*/}
           <Image src={url1} alt="User img..." />
+
+
           <Image src={url2} alt="Response img..." />
 
 
