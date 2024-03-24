@@ -30,11 +30,11 @@ const Home = () => {
 
   return (
     <div className="text-white h-full my-35  ">
-      <div className=" mt-[-64px] w-full h-screen mx-auto text-center flex flex-col justify-center bg-[#000300] color-[#ffff]">
+      <div className=" mt-[-4px] ss:mt-[-48px] w-full h-screen mx-auto text-center flex flex-col justify-center bg-[#000300] color-[#ffff]">
         <p className="text-[#00df9a] font-bold p-2 text-xl">
           Spot, Count, Go: Your vehicle detection companion.
         </p>
-        <h1 className="md:text-6xl sm:text-6xl text-2xl font-bold md:py-3">
+        <h1 className="md:text-6xl sm:text-6xl text-2xl font-bold md:py-2">
           Shaping the Future of Engineering and Technology
         </h1>
         <div className="flex justify-center items-center my-3">

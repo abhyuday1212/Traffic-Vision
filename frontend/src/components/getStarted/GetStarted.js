@@ -13,7 +13,7 @@ import bannerImage2 from "../assets/Loading.jpg"
 
 const Container = styled(Box)`
   margin: 0px 0px;
-  padding: 0px 2px;
+  padding: 0px 1px;
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -26,7 +26,7 @@ const Container = styled(Box)`
 const InsideContainer = styled(Box)`
   width: 70%;
   margin: 50px 5px;
-  padding: 5px 5px;
+  padding: 5px 2px;
   border: 2px solid #3d3d3dde;
   border-radius: 14px;
   background: #ffffff;
@@ -50,8 +50,8 @@ const StyledFileInput = styled(Box)`
 
 const Image = styled('img')({
   width: '25rem',
-  height: '50vh',
-  aspectRatio: "3/2",
+  height: '16rem',
+  aspectRatio: "1/1",
   objectFit: 'contain',
   borderRadius: '14px',
   flexShrink: 0,
@@ -62,14 +62,13 @@ const Image = styled('img')({
 
 const Image2 = styled('img')({
   width: '26rem',
-  height: '50vh',
-  aspectRatio: "3/2",
+  height: '16rem',
+  aspectRatio: "1/1",
   objectFit: 'contain',
   borderRadius: '14px',
   flexShrink: 0,
   border: "1px solid black",
   margin:"2px 2px"
-
 });
 
 function GetStarted() {
